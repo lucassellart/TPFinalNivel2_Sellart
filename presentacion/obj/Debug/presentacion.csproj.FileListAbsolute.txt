@@ -1,0 +1,11 @@
+C:\Users\lsell\OneDrive\Escritorio\TPFinalNivel2_Sellart\TPFinalNivel2_Sellart\presentacion\bin\Debug\presentacion.exe.config
+C:\Users\lsell\OneDrive\Escritorio\TPFinalNivel2_Sellart\TPFinalNivel2_Sellart\presentacion\bin\Debug\presentacion.exe
+C:\Users\lsell\OneDrive\Escritorio\TPFinalNivel2_Sellart\TPFinalNivel2_Sellart\presentacion\bin\Debug\presentacion.pdb
+C:\Users\lsell\OneDrive\Escritorio\TPFinalNivel2_Sellart\TPFinalNivel2_Sellart\presentacion\obj\Debug\presentacion.csproj.AssemblyReference.cache
+C:\Users\lsell\OneDrive\Escritorio\TPFinalNivel2_Sellart\TPFinalNivel2_Sellart\presentacion\obj\Debug\presentacion.frmArticulos.resources
+C:\Users\lsell\OneDrive\Escritorio\TPFinalNivel2_Sellart\TPFinalNivel2_Sellart\presentacion\obj\Debug\presentacion.Properties.Resources.resources
+C:\Users\lsell\OneDrive\Escritorio\TPFinalNivel2_Sellart\TPFinalNivel2_Sellart\presentacion\obj\Debug\presentacion.csproj.GenerateResource.cache
+C:\Users\lsell\OneDrive\Escritorio\TPFinalNivel2_Sellart\TPFinalNivel2_Sellart\presentacion\obj\Debug\presentacion.csproj.CoreCompileInputs.cache
+C:\Users\lsell\OneDrive\Escritorio\TPFinalNivel2_Sellart\TPFinalNivel2_Sellart\presentacion\obj\Debug\presentacion.exe
+C:\Users\lsell\OneDrive\Escritorio\TPFinalNivel2_Sellart\TPFinalNivel2_Sellart\presentacion\obj\Debug\presentacion.pdb
+C:\Users\lsell\OneDrive\Escritorio\TPFinalNivel2_Sellart\TPFinalNivel2_Sellart\presentacion\obj\Debug\presentacion.frmAltaArticulos.resources

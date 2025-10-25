@@ -1,0 +1,6 @@
+C:\Users\lsell\OneDrive\Escritorio\TPFinalNivel2_Sellart\TPFinalNivel2_Sellart\dominio\bin\Debug\dominio.dll
+C:\Users\lsell\OneDrive\Escritorio\TPFinalNivel2_Sellart\TPFinalNivel2_Sellart\dominio\bin\Debug\dominio.pdb
+C:\Users\lsell\OneDrive\Escritorio\TPFinalNivel2_Sellart\TPFinalNivel2_Sellart\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\Users\lsell\OneDrive\Escritorio\TPFinalNivel2_Sellart\TPFinalNivel2_Sellart\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\lsell\OneDrive\Escritorio\TPFinalNivel2_Sellart\TPFinalNivel2_Sellart\dominio\obj\Debug\dominio.dll
+C:\Users\lsell\OneDrive\Escritorio\TPFinalNivel2_Sellart\TPFinalNivel2_Sellart\dominio\obj\Debug\dominio.pdb

@@ -44,6 +44,7 @@
             this.txtFiltroAvanzado = new System.Windows.Forms.TextBox();
             this.btnVerDetalle = new System.Windows.Forms.Button();
             this.lblPresentacion = new System.Windows.Forms.Label();
+            this.lblImagenFrm = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxArticulos)).BeginInit();
             this.SuspendLayout();
@@ -52,21 +53,21 @@
             // 
             this.dgvArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvArticulos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvArticulos.Location = new System.Drawing.Point(71, 171);
+            this.dgvArticulos.Location = new System.Drawing.Point(66, 173);
             this.dgvArticulos.MultiSelect = false;
             this.dgvArticulos.Name = "dgvArticulos";
             this.dgvArticulos.RowHeadersWidth = 51;
             this.dgvArticulos.RowTemplate.Height = 24;
             this.dgvArticulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvArticulos.Size = new System.Drawing.Size(799, 305);
+            this.dgvArticulos.Size = new System.Drawing.Size(895, 305);
             this.dgvArticulos.TabIndex = 0;
             this.dgvArticulos.SelectionChanged += new System.EventHandler(this.dgvArticulos_SelectionChanged);
             // 
             // pbxArticulos
             // 
-            this.pbxArticulos.Location = new System.Drawing.Point(903, 208);
+            this.pbxArticulos.Location = new System.Drawing.Point(1016, 206);
             this.pbxArticulos.Name = "pbxArticulos";
-            this.pbxArticulos.Size = new System.Drawing.Size(229, 235);
+            this.pbxArticulos.Size = new System.Drawing.Size(218, 221);
             this.pbxArticulos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxArticulos.TabIndex = 1;
             this.pbxArticulos.TabStop = false;
@@ -74,7 +75,7 @@
             // btnAgregar
             // 
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(71, 503);
+            this.btnAgregar.Location = new System.Drawing.Point(66, 505);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(117, 40);
             this.btnAgregar.TabIndex = 2;
@@ -85,7 +86,7 @@
             // btnModificar
             // 
             this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.Location = new System.Drawing.Point(232, 503);
+            this.btnModificar.Location = new System.Drawing.Point(227, 505);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(117, 40);
             this.btnModificar.TabIndex = 3;
@@ -96,7 +97,7 @@
             // btnEliminar
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(408, 504);
+            this.btnEliminar.Location = new System.Drawing.Point(403, 506);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(117, 40);
             this.btnEliminar.TabIndex = 4;
@@ -108,7 +109,7 @@
             // 
             this.lblFiltro.AutoSize = true;
             this.lblFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFiltro.Location = new System.Drawing.Point(71, 128);
+            this.lblFiltro.Location = new System.Drawing.Point(66, 130);
             this.lblFiltro.Name = "lblFiltro";
             this.lblFiltro.Size = new System.Drawing.Size(96, 18);
             this.lblFiltro.TabIndex = 5;
@@ -117,7 +118,7 @@
             // txtFiltro
             // 
             this.txtFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFiltro.Location = new System.Drawing.Point(183, 124);
+            this.txtFiltro.Location = new System.Drawing.Point(178, 126);
             this.txtFiltro.Name = "txtFiltro";
             this.txtFiltro.Size = new System.Drawing.Size(293, 24);
             this.txtFiltro.TabIndex = 6;
@@ -126,7 +127,7 @@
             // btnFiltro
             // 
             this.btnFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFiltro.Location = new System.Drawing.Point(858, 583);
+            this.btnFiltro.Location = new System.Drawing.Point(853, 585);
             this.btnFiltro.Name = "btnFiltro";
             this.btnFiltro.Size = new System.Drawing.Size(94, 39);
             this.btnFiltro.TabIndex = 7;
@@ -138,7 +139,7 @@
             // 
             this.lblCampo.AutoSize = true;
             this.lblCampo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCampo.Location = new System.Drawing.Point(74, 594);
+            this.lblCampo.Location = new System.Drawing.Point(69, 596);
             this.lblCampo.Name = "lblCampo";
             this.lblCampo.Size = new System.Drawing.Size(61, 18);
             this.lblCampo.TabIndex = 8;
@@ -149,7 +150,7 @@
             this.cboCampo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCampo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCampo.FormattingEnabled = true;
-            this.cboCampo.Location = new System.Drawing.Point(145, 590);
+            this.cboCampo.Location = new System.Drawing.Point(140, 592);
             this.cboCampo.Name = "cboCampo";
             this.cboCampo.Size = new System.Drawing.Size(134, 26);
             this.cboCampo.TabIndex = 9;
@@ -159,7 +160,7 @@
             // 
             this.lblCriterio.AutoSize = true;
             this.lblCriterio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCriterio.Location = new System.Drawing.Point(289, 594);
+            this.lblCriterio.Location = new System.Drawing.Point(284, 596);
             this.lblCriterio.Name = "lblCriterio";
             this.lblCriterio.Size = new System.Drawing.Size(60, 18);
             this.lblCriterio.TabIndex = 10;
@@ -170,7 +171,7 @@
             this.cboCriterio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCriterio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCriterio.FormattingEnabled = true;
-            this.cboCriterio.Location = new System.Drawing.Point(359, 590);
+            this.cboCriterio.Location = new System.Drawing.Point(354, 592);
             this.cboCriterio.Name = "cboCriterio";
             this.cboCriterio.Size = new System.Drawing.Size(144, 26);
             this.cboCriterio.TabIndex = 11;
@@ -179,7 +180,7 @@
             // 
             this.lblFiltroAvanzado.AutoSize = true;
             this.lblFiltroAvanzado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFiltroAvanzado.Location = new System.Drawing.Point(513, 594);
+            this.lblFiltroAvanzado.Location = new System.Drawing.Point(508, 596);
             this.lblFiltroAvanzado.Name = "lblFiltroAvanzado";
             this.lblFiltroAvanzado.Size = new System.Drawing.Size(114, 18);
             this.lblFiltroAvanzado.TabIndex = 12;
@@ -188,7 +189,7 @@
             // txtFiltroAvanzado
             // 
             this.txtFiltroAvanzado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFiltroAvanzado.Location = new System.Drawing.Point(637, 591);
+            this.txtFiltroAvanzado.Location = new System.Drawing.Point(632, 593);
             this.txtFiltroAvanzado.Name = "txtFiltroAvanzado";
             this.txtFiltroAvanzado.Size = new System.Drawing.Size(172, 24);
             this.txtFiltroAvanzado.TabIndex = 13;
@@ -196,7 +197,7 @@
             // btnVerDetalle
             // 
             this.btnVerDetalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVerDetalle.Location = new System.Drawing.Point(571, 503);
+            this.btnVerDetalle.Location = new System.Drawing.Point(566, 505);
             this.btnVerDetalle.Name = "btnVerDetalle";
             this.btnVerDetalle.Size = new System.Drawing.Size(117, 41);
             this.btnVerDetalle.TabIndex = 14;
@@ -209,18 +210,29 @@
             this.lblPresentacion.AutoSize = true;
             this.lblPresentacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPresentacion.Location = new System.Drawing.Point(239, 32);
+            this.lblPresentacion.Location = new System.Drawing.Point(185, 31);
             this.lblPresentacion.Name = "lblPresentacion";
             this.lblPresentacion.Size = new System.Drawing.Size(677, 46);
             this.lblPresentacion.TabIndex = 17;
             this.lblPresentacion.Text = "CATÁLOGO DE ARTÍCULOS APP:";
+            // 
+            // lblImagenFrm
+            // 
+            this.lblImagenFrm.AutoSize = true;
+            this.lblImagenFrm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblImagenFrm.Location = new System.Drawing.Point(1158, 440);
+            this.lblImagenFrm.Name = "lblImagenFrm";
+            this.lblImagenFrm.Size = new System.Drawing.Size(56, 18);
+            this.lblImagenFrm.TabIndex = 18;
+            this.lblImagenFrm.Text = "Imagen";
             // 
             // frmArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1174, 654);
+            this.ClientSize = new System.Drawing.Size(1280, 654);
+            this.Controls.Add(this.lblImagenFrm);
             this.Controls.Add(this.lblPresentacion);
             this.Controls.Add(this.btnVerDetalle);
             this.Controls.Add(this.txtFiltroAvanzado);
@@ -237,7 +249,7 @@
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.pbxArticulos);
             this.Controls.Add(this.dgvArticulos);
-            this.MinimumSize = new System.Drawing.Size(1192, 701);
+            this.MinimumSize = new System.Drawing.Size(1298, 701);
             this.Name = "frmArticulos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Articulos";
@@ -268,5 +280,6 @@
         private System.Windows.Forms.TextBox txtFiltroAvanzado;
         private System.Windows.Forms.Button btnVerDetalle;
         private System.Windows.Forms.Label lblPresentacion;
+        private System.Windows.Forms.Label lblImagenFrm;
     }
 }

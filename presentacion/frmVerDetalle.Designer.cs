@@ -49,9 +49,9 @@
             // 
             // pbxArticulosDetalle
             // 
-            this.pbxArticulosDetalle.Location = new System.Drawing.Point(348, 92);
+            this.pbxArticulosDetalle.Location = new System.Drawing.Point(348, 105);
             this.pbxArticulosDetalle.Name = "pbxArticulosDetalle";
-            this.pbxArticulosDetalle.Size = new System.Drawing.Size(231, 220);
+            this.pbxArticulosDetalle.Size = new System.Drawing.Size(206, 194);
             this.pbxArticulosDetalle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxArticulosDetalle.TabIndex = 30;
             this.pbxArticulosDetalle.TabStop = false;
@@ -191,9 +191,9 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(473, 345);
+            this.btnSalir.Location = new System.Drawing.Point(463, 345);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(106, 39);
+            this.btnSalir.Size = new System.Drawing.Size(91, 39);
             this.btnSalir.TabIndex = 37;
             this.btnSalir.Text = "Salir:";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -204,7 +204,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(639, 410);
+            this.ClientSize = new System.Drawing.Size(606, 410);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.txtCategoriaDetalle);
             this.Controls.Add(this.txtMarcaDetalle);
@@ -222,9 +222,9 @@
             this.Controls.Add(this.lblNombreDetalle);
             this.Controls.Add(this.lblCodArticuloDetalle);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(657, 457);
+            this.MaximumSize = new System.Drawing.Size(624, 457);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(657, 457);
+            this.MinimumSize = new System.Drawing.Size(624, 457);
             this.Name = "frmVerDetalle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Detalle Artículo:";

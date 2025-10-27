@@ -393,7 +393,7 @@ namespace presentacion
                 {
                     if (ImagenUsadaPorOtroArticulo(articulo.Id, candidatoNorm, existentes, carpeta))
                     {
-                        MessageBox.Show("Ya existe otro artículo con esa imagen. Elegí una distinta.");
+                        MessageBox.Show("Ya existe otro artículo con esa imagen. Por favor, seleccione una distinta.");
                         
                         return;     // Corto el flujo para que el usuario cambie la imagen
                     }

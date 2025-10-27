@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using dominio;
+using Microsoft.IdentityModel.Tokens;
 using negocio;
 
 namespace presentacion
@@ -31,6 +32,7 @@ namespace presentacion
                 cboCampo.Items.Add("Nombre");
                 cboCampo.Items.Add("Marca");
                 cboCampo.Items.Add("Categoria");
+                cboCampo.Items.Add("Precio");
             }
             catch (Exception ex)
             {
@@ -92,7 +94,7 @@ namespace presentacion
         {
             dgvArticulos.Columns["ImagenUrl"].Visible = false;      // Al cargar el formulario, oculto la columna de la URL de la imagen en el DataGridView
             dgvArticulos.Columns["Id"].Visible = false;             // Oculto la columna del Id del Articulo en el DataGridView
-            dgvArticulos.Columns["Precio"].Visible = false;
+            //dgvArticulos.Columns["Precio"].Visible = false;
 
         }
 
@@ -159,15 +161,47 @@ namespace presentacion
                 MessageBox.Show("Por favor, seleccione el criterio para filtrar.");
                 return true;
             }
-            
-            if (!(soloLetras(txtFiltroAvanzado.Text)))
-            {
-                MessageBox.Show("Ingrese solo letras para filtrar por favor.");
-                return true;
+
+            if (cboCampo.SelectedItem.ToString() != "Precio")    // Si el campo NO es Precio, el filtro debe ser letras
+            { 
+                if (!(soloLetras(txtFiltroAvanzado.Text)))
+                {
+                    MessageBox.Show("Ingrese solo letras para filtrar por favor.");
+                    return true;
+                }
             }
-            
+
+            if (cboCampo.SelectedItem.ToString() == "Precio")      // Si el campo es Precio, el filtro debe ser numérico
+            {
+                if (txtFiltroAvanzado.Text.IsNullOrEmpty())
+                {
+                    MessageBox.Show("Por favor, ingrese un número para filtrar.");
+                    return true;
+                }
+
+                if (!(soloNumeros(txtFiltroAvanzado.Text)))
+                {
+                    MessageBox.Show("Ingrese solo números para filtrar por favor.");
+                    return true;
+                }
+            }
+
 
             return false;
+        }
+
+        private bool soloNumeros(string cadena)      // Método para validar que, al elegir el campo 'Numero' el usuario escriba solamente numeros
+        {
+            foreach (char caracter in cadena)        // Bucle para recorrer la caja de texto caracter por caracter, verificar los que NO sean numeros
+            {
+
+                if (!(char.IsNumber(caracter)))     //  El caracter evaluado NO es número
+                {
+                    return false;                   //  Devuelvo false
+                }
+            }
+
+            return true;
         }
 
         private bool soloLetras(string cadena)      // Método para validar que el usuario escriba solamente letras
@@ -229,11 +263,21 @@ namespace presentacion
         {
             string opcion = cboCampo.SelectedItem.ToString();       // En base a lo seleccionado en 'Campo' voy a cargar las opciones posibles en 'Criterio'
 
-            cboCriterio.Items.Clear();
-
-            cboCriterio.Items.Add("Comienza con:");
-            cboCriterio.Items.Add("Termina con:");
-            cboCriterio.Items.Add("Contiene:");
+            if (opcion == "Precio")
+            {
+                cboCriterio.Items.Clear();
+                cboCriterio.Items.Add("Mayor a:");
+                cboCriterio.Items.Add("Menor a:");
+                cboCriterio.Items.Add("Igual a:");
+            }
+            else
+            {
+                cboCriterio.Items.Clear();
+                cboCriterio.Items.Add("Comienza con:");
+                cboCriterio.Items.Add("Termina con:");
+                cboCriterio.Items.Add("Contiene:");
+            }
+ 
         }
 
         private void btnVerDetalle_Click(object sender, EventArgs e)
